@@ -10,6 +10,6 @@ MAINTAINER abcl@simpli.com
 
 ADD https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png /root/logo.png
 RUN apt update -y; echo "hello there" > /root/simplilearn.txt; apt install iputils-ping -y
-echo"hello from docker"
+RUN echo "hello from docker"
 ENTRYPOINT ["ping"]
 CMD ["google.com"]
